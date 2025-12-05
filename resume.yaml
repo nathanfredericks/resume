@@ -1,0 +1,97 @@
+contact:
+  name: Nathan Fredericks
+  emails:
+    - nathan@fredericks.dev
+    - 0300722f@acadiau.ca
+  phone: "+1 (902) 309-4942"
+  website: https://nathan.fredericks.dev/
+  codeberg: https://codeberg.org/nathanfredericks
+  linkedin: https://www.linkedin.com/in/nathanfredericks/
+
+education:
+  - degree: Bachelor of Applied Computer Science with Co-op
+    institution: Acadia University
+    location: Wolfville, Nova Scotia
+    dates: September 2022 - Expected May 2027
+    relevant_coursework:
+      - Data Structures and Algorithms
+      - Computer Programming (Python, Java, C, C++)
+      - Software Engineering
+      - Computer Architecture
+      - Artificial Intelligence
+      - Discrete Mathematics
+      - Matrix Algebra
+      - Full-Stack Cloud Computing
+      - Human Computer Interaction
+    accolades:
+      - "The Joyce Foundation Bursary ($20,000)"
+      - "Lester and Evangeline Giffin Bursary ($7,484)"
+
+skills:
+  known_software:
+    software:
+      - macOS, Linux, Bash
+      - Git, Docker
+      - Traefik, Caddy
+    frameworks:
+      - React, Next.js
+      - Jest, Playwright
+      - Django, Django REST Framework
+      - Express
+  technical:
+    proficient_with:
+      - "Amazon Web Services (CDK, ECS, RDS, Lambda, API Gateway, S3, SES)"
+      - Python
+      - HTML, CSS, JavaScript/TypeScript
+    familiar_with:
+      - Java
+      - PostgreSQL, SQLite
+
+work_experience:
+  - title: Engineering Co-op
+    company: Certn
+    location: Remote
+    dates: April 2024 - August 2025
+    description:
+      - Designed and implemented Slack notifications for an internal support tool, improving support response time.
+      - Developed a custom pricing UI within the internal admin tool, which reduced lost dev time and eliminated the need for scripts to adjust pricing.
+      - Utilized test frameworks to ensure code quality and identify issues.
+      - Worked collaboratively in an agile setting, joining team sprints and taking part in daily stand-up meetings.
+      - Effectively communicated with team members in a remote-first environment.
+  - title: Resident Assistant
+    company: Acadia University
+    location: Wolfville, Nova Scotia
+    dates: August 2023 - Present
+    description:
+      - Manage a community of over 100 students in on-campus housing, ensuring a safe and welcoming environment.
+      - Plan and organize social events to foster connections among residents and build community spirit.
+      - Promptly address incidents to ensure the safety of residents and the building.
+      - Offer a supportive environment for residents to seek guidance for their academic and personal needs.
+  - title: Teaching Assistant
+    company: Acadia University
+    location: Wolfville, Nova Scotia
+    dates: September 2023 - Present
+    description:
+      - Assist teaching the Computer Programming 1 lab.
+      - Grade over 100 assignments biweekly and provide valuable feedback on submissions.
+      - Implemented plagiarism detection software into the grading workflow, resulting in a 2x increase in reported incidents of plagiarism.
+      - Built a custom grading workflow with OpenAI GPT-5 to improve submission feedback, resulting in less questions and better submissions.
+
+relevant_projects:
+  - title: Portfolio Website
+    dates: January 2024 - Present
+    description:
+      - Developed my portfolio website from scratch using Next.js and Tailwind CSS.
+      - Emphasized readability and page speed in the design.
+      - Achieved a perfect 100% score in all categories on Google's PageSpeed Insights.
+      - Enhanced my understanding of website design and the implementation of modern design frameworks.
+  - title: PocketMine Tools
+    dates: February 2019 - May 2024
+    links:
+      codeberg: https://codeberg.org/nathanfredericks/pocketmine-tools
+      website: https://pmt.mcpe.fun/
+    description:
+      - Created a website for Minecraft server administrators and plugin developers.
+      - Developed nine responsive utilities for efficient server management and plugin development on mobile.
+      - Achieved over 100,000 page views and 20,000 unique visits over ten months.
+      - Maintained the project for more than five years, rolling out two major updates based on user feedback.
