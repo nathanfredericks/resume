@@ -79,7 +79,10 @@ func main() {
 		w("%s\n", email)
 	}
 	w("%s\n", r.Contact.Phone)
-	w("Website (%s), Codeberg (%s), LinkedIn (%s)\n\n\n", r.Contact.Website, r.Contact.Codeberg, r.Contact.Linkedin)
+	w("Website (%s)\n", r.Contact.Website)
+	w("Codeberg (%s)\n", r.Contact.Codeberg)
+	w("LinkedIn (%s)\n", r.Contact.Linkedin)
+	w("\n\n")
 
 	w("EDUCATION\n")
 	for _, edu := range r.Education {
