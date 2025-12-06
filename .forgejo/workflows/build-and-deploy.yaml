@@ -16,7 +16,7 @@ jobs:
       - name: Compile Typst to PDF
         uses: docker://ghcr.io/typst/typst:0.14.0
         with:
-          args: compile Resume.typ Resume.pdf
+          args: compile --font-path fonts Resume.typ Resume.pdf
 
       - name: Generate text resume with Go
         uses: docker://golang:1.25-alpine
@@ -32,7 +32,7 @@ jobs:
         with:
           args: s3 cp Resume.pdf s3://${{ secrets.S3_BUCKET }}/Resume.pdf
 
-      - name: Upload TXT to S3
+      - name: Upload text file to S3
         uses: docker://amazon/aws-cli:latest
         env:
           AWS_ACCESS_KEY_ID: ${{ secrets.AWS_ACCESS_KEY_ID }}
