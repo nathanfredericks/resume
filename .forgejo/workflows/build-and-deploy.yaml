@@ -1,0 +1,42 @@
+name: Build and Deploy Resume
+
+on:
+  push:
+    branches:
+      - main
+  workflow_dispatch:
+
+jobs:
+  build-and-upload:
+    runs-on: docker
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Compile Typst to PDF
+        uses: docker://ghcr.io/typst/typst:0.14.0
+        with:
+          args: compile Resume.typ Resume.pdf
+
+      - name: Generate text resume with Go
+        uses: docker://golang:1.25-alpine
+        with:
+          args: sh -c "go run main.go"
+
+      - name: Upload PDF to S3
+        uses: docker://amazon/aws-cli:2.32.11
+        env:
+          AWS_ACCESS_KEY_ID: ${{ secrets.AWS_ACCESS_KEY_ID }}
+          AWS_SECRET_ACCESS_KEY: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
+          AWS_DEFAULT_REGION: ${{ secrets.AWS_REGION }}
+        with:
+          args: s3 cp Resume.pdf s3://${{ secrets.S3_BUCKET }}/Resume.pdf
+
+      - name: Upload TXT to S3
+        uses: docker://amazon/aws-cli:latest
+        env:
+          AWS_ACCESS_KEY_ID: ${{ secrets.AWS_ACCESS_KEY_ID }}
+          AWS_SECRET_ACCESS_KEY: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
+          AWS_DEFAULT_REGION: ${{ secrets.AWS_REGION }}
+        with:
+          args: s3 cp resume.txt s3://${{ secrets.S3_BUCKET }}/resume.txt
