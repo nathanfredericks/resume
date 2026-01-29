@@ -26,14 +26,10 @@ type Resume struct {
 		Accolades          []string `yaml:"accolades"`
 	} `yaml:"education"`
 	Skills struct {
-		KnownSoftware struct {
-			Software   []string `yaml:"software"`
-			Frameworks []string `yaml:"frameworks"`
-		} `yaml:"known_software"`
-		Technical struct {
-			ProficientWith []string `yaml:"proficient_with"`
-			FamiliarWith   []string `yaml:"familiar_with"`
-		} `yaml:"technical"`
+		Languages         []string `yaml:"languages"`
+		Frameworks        []string `yaml:"frameworks"`
+		Infrastructure    []string `yaml:"infrastructure"`
+		ToolsAndDatabases []string `yaml:"tools_and_databases"`
 	} `yaml:"skills"`
 	RelevantProjects []struct {
 		Title string `yaml:"title"`
@@ -98,38 +94,34 @@ func main() {
 	}
 
 	w("SKILLS\n")
-	w("KNOWN SOFTWARE\n")
-	if len(r.Skills.KnownSoftware.Software) > 0 {
-		w("Software:\n")
-		for _, item := range r.Skills.KnownSoftware.Software {
+	if len(r.Skills.Languages) > 0 {
+		w("Languages:\n")
+		for _, item := range r.Skills.Languages {
 			w("  - %s\n", item)
 		}
 		w("\n")
 	}
-	if len(r.Skills.KnownSoftware.Frameworks) > 0 {
+	if len(r.Skills.Frameworks) > 0 {
 		w("Frameworks:\n")
-		for _, item := range r.Skills.KnownSoftware.Frameworks {
+		for _, item := range r.Skills.Frameworks {
 			w("  - %s\n", item)
 		}
 		w("\n")
 	}
-
-	w("TECHNICAL\n")
-	if len(r.Skills.Technical.ProficientWith) > 0 {
-		w("Proficient with:\n")
-		for _, item := range r.Skills.Technical.ProficientWith {
+	if len(r.Skills.Infrastructure) > 0 {
+		w("Infrastructure:\n")
+		for _, item := range r.Skills.Infrastructure {
 			w("  - %s\n", item)
 		}
 		w("\n")
 	}
-	if len(r.Skills.Technical.FamiliarWith) > 0 {
-		w("Familiar with:\n")
-		for _, item := range r.Skills.Technical.FamiliarWith {
+	if len(r.Skills.ToolsAndDatabases) > 0 {
+		w("Tools & Databases:\n")
+		for _, item := range r.Skills.ToolsAndDatabases {
 			w("  - %s\n", item)
 		}
 		w("\n")
 	}
-	w("\n")
 
 	w("WORK EXPERIENCE\n")
 	for _, work := range r.WorkExperience {

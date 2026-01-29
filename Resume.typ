@@ -106,26 +106,24 @@
   columns: (1fr, 1fr),
   column-gutter: 2em,
   [
-    *KNOWN SOFTWARE* \
-    Software:
-    #for item in resume.skills.known_software.software [
+    *LANGUAGES* \
+    #for item in resume.skills.languages [
       - #item
     ]
 
-    Frameworks:
-    #for item in resume.skills.known_software.frameworks [
+    *FRAMEWORKS* \
+    #for item in resume.skills.frameworks [
       - #item
     ]
   ],
   [
-    *TECHNICAL* \
-    Proficient with:
-    #for item in resume.skills.technical.proficient_with [
+    *INFRASTRUCTURE* \
+    #for item in resume.skills.infrastructure [
       - #item
     ]
 
-    Familiar with:
-    #for item in resume.skills.technical.familiar_with [
+    *TOOLS & DATABASES* \
+    #for item in resume.skills.tools_and_databases [
       - #item
     ]
   ]
