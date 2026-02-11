@@ -14,7 +14,7 @@ type Resume struct {
 		Emails   []string `yaml:"emails"`
 		Phone    string   `yaml:"phone"`
 		Website  string   `yaml:"website"`
-		Codeberg string   `yaml:"codeberg"`
+		GitHub   string   `yaml:"github"`
 		Linkedin string   `yaml:"linkedin"`
 	} `yaml:"contact"`
 	Education []struct {
@@ -35,8 +35,8 @@ type Resume struct {
 		Title string `yaml:"title"`
 		Dates string `yaml:"dates"`
 		Links struct {
-			Codeberg string `yaml:"codeberg"`
-			Website  string `yaml:"website"`
+			GitHub  string `yaml:"github"`
+			Website string `yaml:"website"`
 		} `yaml:"links"`
 		Description []string `yaml:"description"`
 	} `yaml:"relevant_projects"`
@@ -76,7 +76,7 @@ func main() {
 	}
 	w("%s\n", r.Contact.Phone)
 	w("Website (%s)\n", r.Contact.Website)
-	w("Codeberg (%s)\n", r.Contact.Codeberg)
+	w("GitHub (%s)\n", r.Contact.GitHub)
 	w("LinkedIn (%s)\n", r.Contact.Linkedin)
 	w("\n\n")
 
@@ -142,8 +142,8 @@ func main() {
 		if proj.Links.Website != "" {
 			links = append(links, fmt.Sprintf("Website (%s)", proj.Links.Website))
 		}
-		if proj.Links.Codeberg != "" {
-			links = append(links, fmt.Sprintf("View on Codeberg (%s)", proj.Links.Codeberg))
+		if proj.Links.GitHub != "" {
+			links = append(links, fmt.Sprintf("View on GitHub (%s)", proj.Links.GitHub))
 		}
 		if len(links) > 0 {
 			w("%s\n", strings.Join(links, " | "))

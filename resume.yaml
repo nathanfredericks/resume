@@ -5,7 +5,7 @@ contact:
     - 0300722f@acadiau.ca
   phone: "+1 (902) 309-4942"
   website: https://nathan.fredericks.dev/
-  codeberg: https://codeberg.org/nathanfredericks
+  github: https://github.com/nathanfredericks
   linkedin: https://www.linkedin.com/in/nathanfredericks/
 
 education:
@@ -79,14 +79,14 @@ relevant_projects:
   - title: Bank Import
     dates: August 2024 - Present
     links:
-      codeberg: https://codeberg.org/nathanfredericks/bank-import
+      github: https://github.com/nathanfredericks/bank-import
     description:
       - A TypeScript tool that imports transactions from Canadian banks (BMO, Rogers Bank, Tangerine, NBDB) into YNAB (You Need a Budget).
       - Scrapes bank data with Playwright, runs in Docker, and deploys to AWS using CDK.
   - title: PocketMine Tools
     dates: February 2019 - May 2024
     links:
-      codeberg: https://codeberg.org/nathanfredericks/pocketmine-tools
+      github: https://github.com/nathanfredericks/pocketmine-tools
       website: https://pmt.mcpe.fun/
     description:
       - A React web app for Minecraft server administrators, maintained for over five years.

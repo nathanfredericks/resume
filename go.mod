@@ -1,4 +1,4 @@
-module codeberg.org/nathanfredericks/resume
+module github.com/nathanfredericks/resume
 
 go 1.25.4
 

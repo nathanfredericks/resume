@@ -21,7 +21,7 @@
   email2,
   phone,
   website,
-  codeberg,
+  github,
   linkedin
 ) = {
   grid(
@@ -36,7 +36,7 @@
       #link("mailto:" + email1)[#email1] \
       #link("mailto:" + email2)[#email2] \
       #phone \
-      #link(website)[Website] | #link(codeberg)[Codeberg] | #link(linkedin)[LinkedIn]
+      #link(website)[Website] | #link(github)[GitHub] | #link(linkedin)[LinkedIn]
     ]
   )
 }
@@ -62,13 +62,13 @@
   v(-0.25em)
 }
 
-#let project(title, date, codeberg: none, website: none) = {
+#let project(title, date, github: none, website: none) = {
   entry(title, date)
   v(-0.5em)
-  if website != none and codeberg != none {
-    link(website)[Website] + [ | ] + link(codeberg)[View on Codeberg]
-  } else if codeberg != none {
-    link(codeberg)[View on Codeberg]
+  if website != none and github != none {
+    link(website)[Website] + [ | ] + link(github)[View on GitHub]
+  } else if github != none {
+    link(github)[View on GitHub]
   } else if website != none {
     link(website)[Website]
   }
@@ -85,7 +85,7 @@
   resume.contact.emails.at(1),
   resume.contact.phone,
   resume.contact.website,
-  resume.contact.codeberg,
+  resume.contact.github,
   resume.contact.linkedin
 )
 
@@ -165,7 +165,7 @@
 
   let website = if "links" in proj and "website" in proj.links { proj.links.website } else { none }
 
-  let codeberg = if "links" in proj and "codeberg" in proj.links { proj.links.codeberg } else { none }
+  let github = if "links" in proj and "github" in proj.links { proj.links.github } else { none }
 
   
 
@@ -175,7 +175,7 @@
 
     proj.dates,
 
-    codeberg: codeberg,
+    github: github,
 
     website: website
 
