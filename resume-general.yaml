@@ -1,0 +1,77 @@
+contact:
+  name: Nathan Fredericks
+  emails:
+    - nathan@fredericks.dev
+    - 0300722f@acadiau.ca
+  phone: "+1 (902) 309-4942"
+
+education:
+  - degree: Bachelor of Applied Computer Science with Co-op
+    institution: Acadia University
+    location: Wolfville, Nova Scotia
+    dates: September 2022 - Expected May 2027
+    accolades:
+      - "The Joyce Foundation Bursary ($20,000)"
+      - "Lester and Evangeline Giffin Bursary ($7,484)"
+
+volunteer_activities:
+  - role: Executive Member
+    organization: Acadia University Community Outreach
+    location: Wolfville, Nova Scotia
+    dates: September 2022 - December 2024
+    description:
+      - Supported seasonal food drives that provided essentials to local families.
+      - Helped run outreach events, including food drives and fundraisers.
+      - Coordinated planning details with the executive team to keep events on schedule.
+  - role: Game Judge and Pit Runner
+    organization: Acadia Robotics
+    location: Wolfville, Nova Scotia
+    dates: February 2025 and February 2026
+    description:
+      - Judged gameplay fairly and consistently at Acadia's regional robotics competition.
+      - Helped teams in pit operations, keeping things organized and on schedule.
+      - Supported a positive, encouraging atmosphere for youth competitors.
+  - role: Mentor
+    organization: FIRST LEGO League
+    location: Wolfville, Nova Scotia
+    dates: October 2023 - December 2024
+    description:
+      - Mentored two Wolfville-area LEGO robotics teams through season preparation and competitions.
+      - Coached students on teamwork, problem-solving, and presentation skills.
+      - Encouraged confidence, persistence, and good sportsmanship throughout the season.
+
+certifications:
+  - First Aid with CPR-C
+  - Naloxone Training
+  - Training for supporting youth with intellectual differences, including autism spectrum disorder
+
+work_experience:
+  - title: Resident Assistant
+    company: Acadia University
+    location: Wolfville, Nova Scotia
+    dates: August 2023 - Present
+    description:
+      - Manage a floor of over 100 students in on-campus housing.
+      - Serve as a curricular-focused RA by designing educational and engaging experiences for residents.
+      - Build community through events that help residents connect and feel supported.
+      - Respond to incidents and emergencies while supporting resident wellbeing and safety.
+      - Support residents with academic and personal concerns and connect them with campus resources.
+  - title: STEAM Mentor
+    company: Brilliant Labs
+    location: Remote
+    dates: June 2023 - March 2024
+    description:
+      - Planned and delivered STEAM activities combining science, technology, engineering, arts, and math.
+      - Organized pop-up learning events designed for youth participants.
+      - Partnered with local day camps to offer hands-on STEAM programming.
+      - Mentored youth and helped create an encouraging, inclusive learning environment.
+      - Coordinated schedules, materials, and event logistics while working remotely.
+  - title: Teaching Assistant
+    company: Acadia University
+    location: Wolfville, Nova Scotia
+    dates: September 2023 - Present
+    description:
+      - Support weekly Computer Programming 1 labs and guide students through foundational concepts.
+      - Grade over 100 assignments biweekly and provide clear, actionable feedback.
+      - Help uphold academic integrity processes and communicate expectations to students.
+      - Built a feedback tool to improve the quality and consistency of comments students receive on code submissions.

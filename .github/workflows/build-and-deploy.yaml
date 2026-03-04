@@ -18,6 +18,11 @@ jobs:
         with:
           args: compile --font-path fonts Resume.typ Resume.pdf
 
+      - name: Compile General Resume Typst to PDF
+        uses: docker://ghcr.io/typst/typst:0.14.0
+        with:
+          args: compile --font-path fonts Resume-General.typ Resume-General.pdf
+
       - name: Generate text resume with Go
         uses: docker://golang:1.25-alpine
         with:
@@ -31,6 +36,15 @@ jobs:
           AWS_DEFAULT_REGION: ${{ secrets.AWS_REGION }}
         with:
           args: s3 cp Resume.pdf s3://${{ secrets.S3_BUCKET }}/Resume.pdf
+
+      - name: Upload General Resume PDF to S3
+        uses: docker://amazon/aws-cli:2.32.11
+        env:
+          AWS_ACCESS_KEY_ID: ${{ secrets.AWS_ACCESS_KEY_ID }}
+          AWS_SECRET_ACCESS_KEY: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
+          AWS_DEFAULT_REGION: ${{ secrets.AWS_REGION }}
+        with:
+          args: s3 cp Resume-General.pdf s3://${{ secrets.S3_BUCKET }}/Resume-General.pdf
 
       - name: Upload text file to S3
         uses: docker://amazon/aws-cli:latest
