@@ -1,94 +1,88 @@
+# Software engineering resume. Rendered by Resume.typ (PDF) and main.go (resume.txt).
+# Shared facts (titles, organizations, dates, GPA, awards) must match resume-physio.yaml.
 contact:
   name: Nathan Fredericks
   emails:
     - nathan@fredericks.dev
     - 0300722f@acadiau.ca
-  phone: "+1 (902) 309-4942"
-  website: https://nathan.fredericks.dev/
+  phone: (902) 309-4942
+  website: https://nathan.fredericks.dev
   github: https://github.com/nathanfredericks
-  linkedin: https://www.linkedin.com/in/nathanfredericks/
+  linkedin: https://www.linkedin.com/in/nathanfredericks
 
-education:
-  - degree: Bachelor of Applied Computer Science with Co-op
-    institution: Acadia University
-    location: Wolfville, Nova Scotia
-    dates: September 2022 - Expected May 2027
-    relevant_coursework:
-      - Data Structures and Algorithms
-      - Computer Programming (Python, Java, C, C++)
-      - Software Engineering
-      - Computer Architecture
-      - Artificial Intelligence
-      - Discrete Mathematics
-      - Matrix Algebra
-      - Full-Stack Cloud Computing
-      - Human Computer Interaction
-    accolades:
-      - "The Joyce Foundation Bursary ($20,000)"
-      - "Lester and Evangeline Giffin Bursary ($7,484)"
+sections:
+  - title: Education
+    entries:
+      - title: Bachelor of Applied Computer Science (Co-op)
+        dates: Sep 2022 - May 2027 (expected)
+        org: Acadia University
+        location: Wolfville, Nova Scotia
+        bullets:
+          - GPA 3.77/4.33. Dean's List Scholar (2023-24, 2024-25, 2025-26). Frank H. Mailman Scholarship (2026-27).
+          - "Courses: Data Structures and Algorithms, Software Engineering 1 and 2, Databases, Operating Systems, AI."
 
-skills:
-  languages:
-    - Python, Java
-    - JavaScript, TypeScript
-    - HTML, CSS
-  frameworks:
-    - React, Next.js, Express
-    - FastAPI, Django, Django REST Framework
-    - Jest, Playwright
-  infrastructure:
-    - "Amazon Web Services (CDK, ECS, RDS, Lambda, API Gateway, S3, SES)"
-    - Docker, Kubernetes
-    - macOS, Linux, Bash
-  tools_and_databases:
-    - Git, GitHub Actions
-    - PostgreSQL, Redis
-    - Datadog, Amplitude
+  - title: Experience
+    entries:
+      - title: Engineering Co-op
+        dates: Apr 2024 - Aug 2025
+        org: Certn
+        location: Remote
+        bullets:
+          - Built features and wrote tests across the stack in React, TypeScript and Python, using Jest and Pytest.
+          - Built a pricing page in an internal tool that replaced the scripts developers ran by hand to change prices.
+          - Added Slack notifications to an internal support tool so the team could respond faster.
+      - title: Operations Manager
+        dates: May 2026 - Present
+        org: Steamspace (Acadia's makerspace)
+        location: Wolfville, Nova Scotia
+        bullets:
+          - Catalogued the makerspace's inventory in HomeBox and built a public search site for it on an iPad kiosk.
+          - Repaired the Prusa MINI 3D printers and assembled a new one from parts.
+      - roles:
+          - title: Senior Resident Assistant
+            dates: Apr 2026 - Present
+          - title: Resident Assistant
+            dates: Aug 2023 - Apr 2026
+        org: Residence Life, Acadia University
+        location: Wolfville, Nova Scotia
+        bullets:
+          - Lead a team of 7 RAs in Chipman House. As an RA, supported over 100 residents each year.
+      - title: Teaching Assistant, Computer Programming 1
+        dates: Sep 2023 - Present
+        org: Jodrey School of Computer Science, Acadia University
+        location: Wolfville, Nova Scotia
+        bullets:
+          - Teach labs and help students one-on-one as they learn Python.
+          - Grade assignments and midterms and give feedback on students' code.
 
-work_experience:
-  - title: Engineering Co-op
-    company: Certn
-    location: Remote
-    dates: April 2024 - August 2025
-    description:
-      - Developed features across the stack in React, TypeScript, and Python.
-      - Built a custom pricing UI that replaced manual developer scripts for adjusting prices.
-      - Added Slack notifications to an internal support tool to help the team respond faster.
-      - Wrote tests using Jest and Playwright for frontend and backend services.
-      - Worked remotely with a distributed team using daily stand-ups and sprints.
-  - title: Resident Assistant
-    company: Acadia University
-    location: Wolfville, Nova Scotia
-    dates: August 2023 - Present
-    description:
-      - Manage a floor of over 100 students in on-campus housing.
-      - Plan social events to help residents get to know each other.
-      - Respond to incidents and emergencies as they come up.
-      - Support residents with academic and personal concerns.
-  - title: Teaching Assistant
-    company: Acadia University
-    location: Wolfville, Nova Scotia
-    dates: September 2023 - Present
-    description:
-      - Help teach the Computer Programming 1 lab.
-      - Grade over 100 assignments biweekly and give feedback on submissions.
-      - Set up plagiarism detection software, which doubled the number of reported cases.
-      - Built a grading tool with OpenAI GPT-5 that gives students better feedback on their code.
+  - title: Projects
+    entries:
+      - title: ID Scanner for StarRez
+        stack: Flutter, Dart, SQLCipher, Next.js
+        link:
+          text: App Store and Google Play
+          url: https://apps.apple.com/ca/app/id6803913824
+        bullets:
+          - Built an iOS and Android app that reads student ID cards with on-device OCR and looks up residents in StarRez. RAs use it for guest sign-ins, door checks and incident reports.
+      - title: Chipman Duty Schedule
+        stack: Next.js, React, AWS Amplify, AppSync, DynamoDB
+        bullets:
+          - Built a web app where Chipman House RAs sign in by text to see the live duty schedule and guest sign-ins.
+      - title: ReceiptBin
+        stack: Swift, SwiftUI, Cloudflare Workers, TypeScript
+        link:
+          text: receiptbin.app
+          url: https://receiptbin.app
+        bullets:
+          - Built and released an iPhone and iPad app that reads receipt details automatically and keeps receipts organized.
+      - title: InstaGrader (capstone project, A+)
+        stack: Python, Django, Next.js, AWS Bedrock
+        bullets:
+          - Fine-tuned an open-source language model on about 7,000 human-scored essays to score essays against a rubric, with teachers reviewing every score.
 
-relevant_projects:
-  - title: Bank Import
-    dates: August 2024 - Present
-    links:
-      github: https://github.com/nathanfredericks/bank-import
-    description:
-      - A TypeScript tool that imports transactions from Canadian banks (BMO, Rogers Bank, Tangerine, NBDB) into YNAB (You Need a Budget).
-      - Scrapes bank data with Playwright, runs in Docker, and deploys to AWS using CDK.
-  - title: PocketMine Tools
-    dates: February 2019 - May 2024
-    links:
-      github: https://github.com/nathanfredericks/pocketmine-tools
-      website: https://pmt.mcpe.fun/
-    description:
-      - A React web app for Minecraft server administrators, maintained for over five years.
-      - Reached 100,000+ page views and 20,000+ unique visitors.
-      - Released two major updates with features users asked for and performance fixes.
+  - title: Skills
+    lines:
+      - label: Languages
+        text: Python, TypeScript, JavaScript, Swift, Dart, Go, Java, SQL
+      - label: Frameworks and tools
+        text: React, Next.js, Django, Flutter, SwiftUI, AWS, Cloudflare Workers, Docker, PostgreSQL, Git
