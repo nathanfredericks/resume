@@ -28,15 +28,15 @@ sections:
         org: Certn
         location: Remote
         bullets:
-          - Built features and wrote tests across the stack in React, TypeScript and Python, using Jest and Pytest.
-          - Built a pricing page in an internal tool that replaced the scripts developers ran by hand to change prices.
+          - Built full-stack features in React, TypeScript and Python, with tests in Jest and Pytest.
+          - Built a pricing page in an internal tool so developers no longer had to run scripts by hand to change prices.
           - Added Slack notifications to an internal support tool so the team could respond faster.
       - title: Operations Manager
         dates: May 2026 - Present
         org: Steamspace (Acadia's makerspace)
         location: Wolfville, Nova Scotia
         bullets:
-          - Catalogued the makerspace's inventory in HomeBox and built a public search site for it on an iPad kiosk.
+          - Catalogued the makerspace's inventory in HomeBox and built a search site for it that visitors use on an iPad kiosk.
           - Repaired the Prusa MINI 3D printers and assembled a new one from parts.
       - roles:
           - title: Senior Resident Assistant
@@ -46,7 +46,7 @@ sections:
         org: Residence Life, Acadia University
         location: Wolfville, Nova Scotia
         bullets:
-          - Lead a team of 7 RAs in Chipman House. As an RA, supported over 100 residents each year.
+          - Lead a team of 7 RAs in Chipman House. Supported over 100 residents a year as an RA.
       - title: Teaching Assistant, Computer Programming 1
         dates: Sep 2023 - Present
         org: Jodrey School of Computer Science, Acadia University
@@ -67,18 +67,18 @@ sections:
       - title: Chipman Duty Schedule
         stack: Next.js, React, AWS Amplify, AppSync, DynamoDB
         bullets:
-          - Built a web app where Chipman House RAs sign in by text to see the live duty schedule and guest sign-ins.
+          - Built a web app that shows Chipman House RAs the live duty schedule and guest sign-ins, with login by text message.
       - title: ReceiptBin
         stack: Swift, SwiftUI, Cloudflare Workers, TypeScript
         link:
           text: receiptbin.app
           url: https://receiptbin.app
         bullets:
-          - Built and released an iPhone and iPad app that reads receipt details automatically and keeps receipts organized.
+          - Built and released an iPhone and iPad app that scans receipts and fills in their details automatically.
       - title: InstaGrader (capstone project, A+)
         stack: Python, Django, Next.js, AWS Bedrock
         bullets:
-          - Fine-tuned an open-source language model on about 7,000 human-scored essays to score essays against a rubric, with teachers reviewing every score.
+          - Fine-tuned an open-source language model on about 7,000 human-scored essays to suggest rubric scores for teachers to review.
 
   - title: Skills
     lines:

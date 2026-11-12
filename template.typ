@@ -90,7 +90,11 @@
     if "entries" in s {
       for (i, e) in s.entries.enumerate() {
         block(breakable: false, render-entry(e))
-        if i < s.entries.len() - 1 { v(entry-gap) }
+        if i < s.entries.len() - 1 {
+          // Back-to-back compact entries read as one short list, so keep them close.
+          let next = s.entries.at(i + 1)
+          if e.at("compact", default: false) and next.at("compact", default: false) { v(-0.45em) } else { v(entry-gap) }
+        }
       }
     }
   }

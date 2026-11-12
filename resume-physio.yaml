@@ -1,6 +1,6 @@
 # Resume for academic referees (Dalhousie MScPT application). Rendered by Resume-Physio.typ.
 # Same structure and entry style as resume.yaml. Shared facts (titles, organizations,
-# dates, GPA, awards) and shared bullets must match it.
+# dates, GPA, awards) must match it; bullets are written for referees.
 contact:
   name: Nathan Fredericks
   emails:
@@ -18,11 +18,11 @@ sections:
         bullets:
           - GPA 3.77/4.33. Dean's List Scholar (2023-24, 2024-25, 2025-26). Frank H. Mailman Scholarship (2026-27).
           - "Courses: Human Biology 1, History of Medicine, Introductory Psychology 1 and 2, Social Psychology, Statistics 1 and 2."
-      - title: Non-degree studies
-        org: Dalhousie University
-        location: Online
-        bullets:
-          - "Courses: Human Physiology 1 and 2, Human Anatomy."
+          - "Capstone project (A+), supervised by Dr. Sazia Mahfuz: fine-tuned an open-source language model on about 7,000 human-scored essays to suggest rubric scores for teachers to review."
+      - compact: true
+        title: Non-degree studies
+        org: Dalhousie University (online)
+        text: "Courses: Human Physiology 1 and 2, Human Anatomy."
 
   - title: Volunteer Experience
     entries:
@@ -31,49 +31,25 @@ sections:
         org: Acadia S.M.I.L.E. Program
         location: Wolfville, Nova Scotia
         bullets:
-          - Work one-on-one with a participant who has a progressive neuromuscular condition and autism, adapting each activity to his mobility and sensory needs.
-          - Introduced him to Weave Chat, an AAC app, on my iPhone. He now uses it to make choices during sessions.
-          - Worked with kinesiology students to build a strength routine for him, aimed at maintaining his mobility.
+          - Work one-on-one every Friday evening with a participant who has a progressive neuromuscular condition and autism, and adapt activities to his mobility and sensory needs.
+          - Introduced him to Weave Chat, a communication (AAC) app, which he now uses to make choices during sessions.
+          - Built a weekly strength routine for him with kinesiology students to help maintain his mobility.
           - Named S.M.I.L.E. Instructor of the Month for October 2026.
-      - title: SteamTeam Volunteer
-        dates: Sep 2026 - Present
-        org: Steamspace (Acadia's makerspace)
-        location: Wolfville, Nova Scotia
-        bullets:
-          - Help students and faculty use the 3D printers, laser cutters and other equipment for their coursework and projects.
-      - title: Mentor
-        dates: Oct 2023 - Dec 2024
+      - compact: true
+        title: Mentor
         org: FIRST LEGO League
-        location: Wolfville, Nova Scotia
-        bullets:
-          - Mentored two teams of local youth through a season of robot design and their innovation project.
-      - title: Game Judge and Pit Runner
-        dates: Feb 2024 - Feb 2026
+        dates: Oct 2023 - Dec 2024
+      - compact: true
+        title: Game Judge and Pit Runner
         org: Acadia Robotics
-        location: Wolfville, Nova Scotia
-        bullets:
-          - Judged matches and helped youth teams in the pits at Acadia's regional robotics competition each year.
-      - title: Executive Member
-        dates: Sep 2022 - Dec 2024
+        dates: Feb 2024 - Feb 2026
+      - compact: true
+        title: Executive Member
         org: Acadia University Community Outreach
-        location: Wolfville, Nova Scotia
-        bullets:
-          - Helped run food drives, fundraisers and after-school programs for local families.
+        dates: Sep 2022 - Dec 2024
 
   - title: Experience
     entries:
-      - title: Engineering Co-op
-        dates: Apr 2024 - Aug 2025
-        org: Certn
-        location: Remote
-        bullets:
-          - Built features and wrote tests across the stack in React, TypeScript and Python, using Jest and Pytest.
-      - title: Operations Manager
-        dates: May 2026 - Present
-        org: Steamspace (Acadia's makerspace)
-        location: Wolfville, Nova Scotia
-        bullets:
-          - Run class visits and open houses, and train new SteamTeam volunteers on the equipment.
       - roles:
           - title: Senior Resident Assistant
             dates: Apr 2026 - Present
@@ -82,32 +58,33 @@ sections:
         org: Residence Life, Acadia University
         location: Wolfville, Nova Scotia
         bullets:
-          - Lead a team of 7 RAs in Chipman House. As an RA, supported over 100 residents each year.
-          - Carried the on-call phone in summer 2026 for calls that usually go to a Residence Life Coordinator, including student mental health concerns and emergencies.
+          - Lead a team of 7 RAs in Chipman House. Supported over 100 residents a year as an RA.
+          - Covered on-call duty for summer residence in 2026, responding to student mental health concerns and emergencies.
+      - roles:
+          - title: Operations Manager
+            dates: May 2026 - Present
+          - title: SteamTeam Volunteer
+            dates: Sep 2026 - Present
+        org: Steamspace (Acadia's makerspace)
+        location: Wolfville, Nova Scotia
+        bullets:
+          - Run class visits and open houses and train new SteamTeam volunteers on the equipment.
+          - Help students and faculty use the 3D printers and laser cutters for class and personal projects.
+          - Ran a campus geocaching event for over 40 people in summer 2026.
       - title: Teaching Assistant, Computer Programming 1
         dates: Sep 2023 - Present
         org: Jodrey School of Computer Science, Acadia University
         location: Wolfville, Nova Scotia
         bullets:
-          - Teach labs and help students one-on-one as they learn Python.
-          - Grade assignments and midterms and give feedback on students' code.
-      - title: STEAM Mentor
-        dates: Jun 2023 - Mar 2024
-        org: Brilliant Labs
+          - Teach labs, help students one-on-one as they learn Python, and grade assignments and midterms.
+      - title: Engineering Co-op
+        dates: Apr 2024 - Aug 2025
+        org: Certn
         location: Remote
         bullets:
-          - Developed hands-on STEAM activities for youth and delivered weekly programs with local community partners.
-
-  - title: Projects
-    entries:
-      - title: InstaGrader (capstone project, A+)
-        stack: Supervised by Dr. Sazia Mahfuz
-        bullets:
-          - Fine-tuned an open-source language model on about 7,000 human-scored essays to score essays against a rubric, with teachers reviewing every score.
+          - Built full-stack features in React, TypeScript and Python, with tests in Jest and Pytest.
+          - Added Slack notifications to an internal support tool so the team could respond faster.
 
   - title: Certifications
     lines:
-      - label: First aid
-        text: Emergency First Aid and CPR/AED Level C, Canadian Red Cross (to May 2029)
-      - label: Other training
-        text: Naloxone, supporting youth with intellectual differences including autism
+      - text: Emergency First Aid and CPR/AED Level C, Canadian Red Cross (valid to May 2029). Also trained in naloxone and in supporting youth with intellectual differences, including autism.
